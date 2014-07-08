@@ -10,7 +10,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
     <title>XKCD Random Number Generator</title>
     <meta charset="utf-8">
     <link rel='stylesheet' href='' type='text/css'>
-    <?php require 'logic.php'; ?> //Links to logic.php
+    <?php require 'logic.php'; ?>
 
 </head>
 
@@ -21,13 +21,17 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
     <input type="submit" value="Submit">
   </form>
 
-  <?php foreach($password as $value ==> $result): ?>
-      <?php echo $password[0]; ?>
-      <?php for($i=0; $i<$iteration; $i++) ?>
-      <?php { ?>
-        -<?php $password[$i] ?>
-      <?php } ?>
-  <?php endforeach; ?>
+	<?php //foreach($lines as $iteration => &$result): ?>
+		<?php //echo $result[$word] ?>
+	<?php //endforeach; ?>
+
+  <?php //foreach($name as $name => &$result): ?>
+      <?php //echo $name; ?>
+      <?php //for($i=0; $i<$iteration; $i++) ?>
+      <?php //{ ?>
+        <?//php echo $password[$i] ?>
+      <?php //} ?>
+  <?php //endforeach; ?>
 
 </body>
 </html>
