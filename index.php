@@ -25,7 +25,7 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
       <?php echo $password[0]; ?>
       <?php for($i=0; $i<$iteration; $i++) ?>
       <?php { ?>
-        -<?php $password[i] ?>
+        -<?php $password[$i] ?>
       <?php } ?>
   <?php endforeach; ?>
 
