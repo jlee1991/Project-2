@@ -22,7 +22,11 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
   </form>
 
   <?php foreach($password as $value ==> $result): ?>
-      <?php echo $value; ?>-
+      <?php echo $password[0]; ?>
+      <?php for($i=0; $i<$iteration; $i++) ?>
+      <?php { ?>
+        -<?php $password[i] ?>
+      <?php } ?>
   <?php endforeach; ?>
 
 </body>
